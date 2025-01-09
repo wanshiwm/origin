@@ -73,9 +73,19 @@ func (handler *WSHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 	handler.conns[conn] = struct{}{}
 	handler.mutexConns.Unlock()
-
-	conn.UnderlyingConn().(*net.TCPConn).SetLinger(0)
-	conn.UnderlyingConn().(*net.TCPConn).SetNoDelay(true)
+	switch underlyingConn := conn.UnderlyingConn().(type) {
+	case *net.TCPConn:
+		underlyingConn.SetLinger(0)
+		underlyingConn.SetNoDelay(true)
+	case *tls.Conn:
+		tcpConn := underlyingConn.NetConn().(*net.TCPConn)
+		tcpConn.SetLinger(0)
+		tcpConn.SetNoDelay(true)
+	default:
+		log.Error("Unsupported connection type")
+		underlyingConn.Close()
+		return
+	}
 	wsConn := newWSConn(conn, r.Header, handler.pendingWriteNum, handler.maxMsgLen, handler.messageType)
 	agent := handler.newAgent(wsConn)
 	agent.Run()
