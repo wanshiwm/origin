@@ -1,6 +1,6 @@
 package event
 
-import "github.com/duanhf2012/origin/v2/util/sync"
+import "github.com/wanshiwm/origin/v2/util/sync"
 
 // eventPool的内存池,缓存Event
 const defaultMaxEventChannelNum = 2000000
@@ -9,15 +9,15 @@ var eventPool = sync.NewPoolEx(make(chan sync.IPoolData, defaultMaxEventChannelN
 	return &Event{}
 })
 
-func NewEvent() *Event{
+func NewEvent() *Event {
 	return eventPool.Get().(*Event)
 }
 
-func DeleteEvent(event IEvent){
+func DeleteEvent(event IEvent) {
 	eventPool.Put(event.(sync.IPoolData))
 }
 
-func SetEventPoolSize(eventPoolSize int){
+func SetEventPoolSize(eventPoolSize int) {
 	eventPool = sync.NewPoolEx(make(chan sync.IPoolData, eventPoolSize), func() sync.IPoolData {
 		return &Event{}
 	})

@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"errors"
 	"fmt"
-	"github.com/duanhf2012/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/log"
 	"net/url"
 	"reflect"
 	"strconv"
@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/duanhf2012/origin/v2/service"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/wanshiwm/origin/v2/service"
 )
 
 type SyncFun func()

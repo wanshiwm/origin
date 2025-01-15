@@ -2,12 +2,12 @@ package wsservice
 
 import (
 	"fmt"
-	"github.com/duanhf2012/origin/v2/event"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/network"
-	"github.com/duanhf2012/origin/v2/network/processor"
-	"github.com/duanhf2012/origin/v2/service"
 	"github.com/google/uuid"
+	"github.com/wanshiwm/origin/v2/event"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/network"
+	"github.com/wanshiwm/origin/v2/network/processor"
+	"github.com/wanshiwm/origin/v2/service"
 	"strings"
 	"sync"
 )

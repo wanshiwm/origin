@@ -1,4 +1,4 @@
-module github.com/duanhf2012/origin/v2
+module github.com/wanshiwm/origin/v2
 
 go 1.22
 

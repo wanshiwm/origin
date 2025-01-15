@@ -3,8 +3,8 @@ package network
 import (
 	"errors"
 	"fmt"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/util/bytespool"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/util/bytespool"
 	"net"
 	"sync"
 	"time"

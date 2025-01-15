@@ -4,8 +4,8 @@ import (
 	"container/heap"
 	"context"
 	"errors"
-	"github.com/duanhf2012/origin/v2/event"
-	"github.com/duanhf2012/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/event"
+	"github.com/wanshiwm/origin/v2/log"
 	"time"
 )
 
@@ -197,7 +197,7 @@ func (fg *FrameGroup) CancelTimer(timerID FrameTimerID) {
 	fg.refreshMinFrame()
 }
 
-func (fg *FrameGroup) Close(){
+func (fg *FrameGroup) Close() {
 	fg.ft.removeGroup(fg.groupID, fg.preGlobalFrameNum)
-	delete(fg.ft.mapGroup,fg.groupID)
+	delete(fg.ft.mapGroup, fg.groupID)
 }

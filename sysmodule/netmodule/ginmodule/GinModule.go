@@ -2,10 +2,10 @@ package ginmodule
 
 import (
 	"context"
-	"github.com/duanhf2012/origin/v2/event"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/service"
 	"github.com/gin-gonic/gin"
+	"github.com/wanshiwm/origin/v2/event"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/service"
 	"io"
 	"log/slog"
 	"net/http"

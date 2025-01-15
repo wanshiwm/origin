@@ -3,7 +3,7 @@ package network
 import (
 	"crypto/tls"
 	"errors"
-	"github.com/duanhf2012/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/log"
 	"net/http"
 	"time"
 )

@@ -2,7 +2,7 @@ package event
 
 import (
 	"fmt"
-	"github.com/duanhf2012/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/log"
 	"runtime"
 	"sync"
 )
@@ -15,12 +15,12 @@ type IEvent interface {
 }
 
 type Event struct {
-	Type EventType
-	Data interface{}
-	IntExt [2]int64
+	Type      EventType
+	Data      interface{}
+	IntExt    [2]int64
 	StringExt [2]string
-	AnyExt [2]any
-	ref  bool
+	AnyExt    [2]any
+	ref       bool
 }
 
 var emptyEvent Event

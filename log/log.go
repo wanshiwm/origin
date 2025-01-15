@@ -3,7 +3,7 @@ package log
 import (
 	"context"
 	"fmt"
-	"github.com/duanhf2012/origin/v2/util/bytespool"
+	"github.com/wanshiwm/origin/v2/util/bytespool"
 	"io"
 	"log/slog"
 	"os"

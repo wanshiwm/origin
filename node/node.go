@@ -3,14 +3,14 @@ package node
 import (
 	"errors"
 	"fmt"
-	"github.com/duanhf2012/origin/v2/cluster"
-	"github.com/duanhf2012/origin/v2/console"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/profiler"
-	"github.com/duanhf2012/origin/v2/service"
-	"github.com/duanhf2012/origin/v2/util/buildtime"
-	"github.com/duanhf2012/origin/v2/util/sysprocess"
-	"github.com/duanhf2012/origin/v2/util/timer"
+	"github.com/wanshiwm/origin/v2/cluster"
+	"github.com/wanshiwm/origin/v2/console"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/profiler"
+	"github.com/wanshiwm/origin/v2/service"
+	"github.com/wanshiwm/origin/v2/util/buildtime"
+	"github.com/wanshiwm/origin/v2/util/sysprocess"
+	"github.com/wanshiwm/origin/v2/util/timer"
 	"io"
 	"net/http"
 	_ "net/http/pprof"
@@ -400,8 +400,8 @@ func SetupTemplateFunc(fs ...func() service.IService) {
 	}
 }
 
-func SetupTemplate[T any,P templateServicePoint[T]]() {
-	SetupTemplateFunc(func() service.IService{
+func SetupTemplate[T any, P templateServicePoint[T]]() {
+	SetupTemplateFunc(func() service.IService {
 		var t T
 		return P(&t)
 	})

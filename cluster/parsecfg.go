@@ -3,9 +3,9 @@ package cluster
 import (
 	"errors"
 	"fmt"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/rpc"
 	jsoniter "github.com/json-iterator/go"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/rpc"
 	"gopkg.in/yaml.v3"
 	"os"
 	"path/filepath"

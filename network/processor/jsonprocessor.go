@@ -3,8 +3,8 @@ package processor
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/util/bytespool"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/util/bytespool"
 	"reflect"
 )
 

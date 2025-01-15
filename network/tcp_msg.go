@@ -3,7 +3,7 @@ package network
 import (
 	"encoding/binary"
 	"errors"
-	"github.com/duanhf2012/origin/v2/util/bytespool"
+	"github.com/wanshiwm/origin/v2/util/bytespool"
 	"io"
 	"math"
 )

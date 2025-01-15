@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/rpc"
-	"github.com/duanhf2012/origin/v2/service"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/rpc"
+	"github.com/wanshiwm/origin/v2/service"
 )
 
 const PreMapRankSkipLen = 10

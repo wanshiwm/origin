@@ -2,8 +2,8 @@ package ginmodule
 
 import (
 	"fmt"
-	"github.com/duanhf2012/origin/v2/log"
 	"github.com/gin-gonic/gin"
+	"github.com/wanshiwm/origin/v2/log"
 	"time"
 )
 

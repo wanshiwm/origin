@@ -9,8 +9,8 @@ import (
 	"runtime"
 
 	"context"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/util/queue"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/util/queue"
 )
 
 var idleTimeout = int64(2 * time.Second)

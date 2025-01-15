@@ -1,8 +1,8 @@
 package rpc
 
 import (
-	"github.com/duanhf2012/origin/v2/log"
 	"github.com/nats-io/nats.go"
+	"github.com/wanshiwm/origin/v2/log"
 	"time"
 )
 

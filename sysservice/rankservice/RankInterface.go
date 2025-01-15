@@ -1,8 +1,8 @@
 package rankservice
 
 import (
-	"github.com/duanhf2012/origin/v2/rpc"
-	"github.com/duanhf2012/origin/v2/service"
+	"github.com/wanshiwm/origin/v2/rpc"
+	"github.com/wanshiwm/origin/v2/service"
 )
 
 type RankDataChangeType int8

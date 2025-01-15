@@ -2,11 +2,11 @@ package wsmodule
 
 import (
 	"fmt"
-	"github.com/duanhf2012/origin/v2/event"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/network"
-	"github.com/duanhf2012/origin/v2/network/processor"
-	"github.com/duanhf2012/origin/v2/service"
+	"github.com/wanshiwm/origin/v2/event"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/network"
+	"github.com/wanshiwm/origin/v2/network/processor"
+	"github.com/wanshiwm/origin/v2/service"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"sync"
 )

@@ -1,8 +1,8 @@
 package smath
 
 import (
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/util/typ"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/util/typ"
 )
 
 func Max[NumType typ.Number](number1 NumType, number2 NumType) NumType {

@@ -1,11 +1,11 @@
 package cluster
 
 import (
-	"github.com/duanhf2012/origin/v2/event"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/rpc"
-	"github.com/duanhf2012/origin/v2/service"
-	"github.com/duanhf2012/origin/v2/util/timer"
+	"github.com/wanshiwm/origin/v2/event"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/rpc"
+	"github.com/wanshiwm/origin/v2/service"
+	"github.com/wanshiwm/origin/v2/util/timer"
 	"go.etcd.io/etcd/api/v3/mvccpb"
 	"go.etcd.io/etcd/client/v3"
 	"google.golang.org/protobuf/proto"

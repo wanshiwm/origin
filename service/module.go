@@ -6,11 +6,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/duanhf2012/origin/v2/concurrent"
-	"github.com/duanhf2012/origin/v2/event"
-	"github.com/duanhf2012/origin/v2/log"
-	rpcHandle "github.com/duanhf2012/origin/v2/rpc"
-	"github.com/duanhf2012/origin/v2/util/timer"
+	"github.com/wanshiwm/origin/v2/concurrent"
+	"github.com/wanshiwm/origin/v2/event"
+	"github.com/wanshiwm/origin/v2/log"
+	rpcHandle "github.com/wanshiwm/origin/v2/rpc"
+	"github.com/wanshiwm/origin/v2/util/timer"
 )
 
 const InitModuleId = 1e9

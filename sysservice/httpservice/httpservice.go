@@ -2,11 +2,11 @@ package httpservice
 
 import (
 	"fmt"
-	"github.com/duanhf2012/origin/v2/event"
-	"github.com/duanhf2012/origin/v2/network"
-	"github.com/duanhf2012/origin/v2/service"
-	"github.com/duanhf2012/origin/v2/util/uuid"
 	jsoniter "github.com/json-iterator/go"
+	"github.com/wanshiwm/origin/v2/event"
+	"github.com/wanshiwm/origin/v2/network"
+	"github.com/wanshiwm/origin/v2/service"
+	"github.com/wanshiwm/origin/v2/util/uuid"
 	"io"
 	"net/http"
 	"os"

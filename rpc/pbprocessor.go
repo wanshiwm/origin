@@ -2,7 +2,7 @@ package rpc
 
 import (
 	"fmt"
-	"github.com/duanhf2012/origin/v2/util/sync"
+	"github.com/wanshiwm/origin/v2/util/sync"
 	"google.golang.org/protobuf/proto"
 )
 

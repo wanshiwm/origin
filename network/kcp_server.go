@@ -1,8 +1,8 @@
 package network
 
 import (
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/network/processor"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/network/processor"
 	"github.com/xtaci/kcp-go/v5"
 	"sync"
 	"time"

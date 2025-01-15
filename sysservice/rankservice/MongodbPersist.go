@@ -2,10 +2,10 @@ package rankservice
 
 import (
 	"fmt"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/rpc"
-	"github.com/duanhf2012/origin/v2/service"
-	"github.com/duanhf2012/origin/v2/sysmodule/mongodbmodule"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/rpc"
+	"github.com/wanshiwm/origin/v2/service"
+	"github.com/wanshiwm/origin/v2/sysmodule/mongodbmodule"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"runtime"

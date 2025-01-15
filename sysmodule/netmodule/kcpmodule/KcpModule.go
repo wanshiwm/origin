@@ -2,11 +2,11 @@ package kcpmodule
 
 import (
 	"fmt"
-	"github.com/duanhf2012/origin/v2/event"
-	"github.com/duanhf2012/origin/v2/log"
-	"github.com/duanhf2012/origin/v2/network"
-	"github.com/duanhf2012/origin/v2/network/processor"
-	"github.com/duanhf2012/origin/v2/service"
+	"github.com/wanshiwm/origin/v2/event"
+	"github.com/wanshiwm/origin/v2/log"
+	"github.com/wanshiwm/origin/v2/network"
+	"github.com/wanshiwm/origin/v2/network/processor"
+	"github.com/wanshiwm/origin/v2/service"
 	"github.com/xtaci/kcp-go/v5"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"runtime"

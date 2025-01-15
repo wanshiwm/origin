@@ -1,7 +1,7 @@
 package srand
 
 import (
-	"github.com/duanhf2012/origin/v2/util/typ"
+	"github.com/wanshiwm/origin/v2/util/typ"
 	"math/rand"
 	"slices"
 )
