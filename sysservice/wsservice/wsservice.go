@@ -182,3 +182,14 @@ func (ws *WSService) Close(clientId string) {
 
 func (ws *WSService) recyclerReaderBytes(data []byte) {
 }
+
+func (ws *WSService) GetWSConn(clientId string) *network.WSConn {
+	ws.mapClientLocker.Lock()
+	defer ws.mapClientLocker.Unlock()
+	client, ok := ws.mapClient[clientId]
+	if ok == false {
+		ws.mapClientLocker.Unlock()
+		return nil
+	}
+	return client.wsConn
+}
