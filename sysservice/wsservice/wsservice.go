@@ -193,3 +193,8 @@ func (ws *WSService) GetWSConn(clientId string) *network.WSConn {
 	}
 	return client.wsConn
 }
+
+func (ws *WSService) SetKeyPairFile(certFile string, keyFile string) {
+	ws.wsServer.CertFile = certFile
+	ws.wsServer.KeyFile = keyFile
+}
