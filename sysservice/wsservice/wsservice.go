@@ -188,7 +188,6 @@ func (ws *WSService) GetWSConn(clientId string) *network.WSConn {
 	defer ws.mapClientLocker.Unlock()
 	client, ok := ws.mapClient[clientId]
 	if ok == false {
-		ws.mapClientLocker.Unlock()
 		return nil
 	}
 	return client.wsConn
